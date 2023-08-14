@@ -1,0 +1,220 @@
+.container {
+    display: flex;
+    align-items: start;
+  }
+  
+  .container div {
+    flex-basis: 50%;
+  }
+  
+.centreText {
+    text-align: center;
+  }
+  
+  img.image {
+    width: 200px; /* ajustez cette valeur selon vos besoins */
+    margin-right: 20px; /* ajustez cette valeur selon vos besoins */
+  }
+  .box {
+    width: 350px;
+    padding: 30px;
+    border: 0px solid rgb(255, 255, 255);
+    margin: 0;
+    height: 200px;
+  }
+  body {
+    margin-left: 30px; /* Ajustez la valeur selon vos préférences */
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+h1,h2 {
+    color: rgb(221, 149, 33);
+  }
+
+.p{
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+}
+h1 ,h2{
+    font-size: 50px;
+}
+.boxcenter {
+    width: 400px;
+    padding-left:300px;
+    border: 0px solid rgb(255, 255, 255);
+    margin: 0;
+  }
+
+  .pad{
+    padding-top: 200px;
+  }
+
+  .container img.box {
+    width: 544px; /* Ajustez cette valeur selon vos besoins */
+    height:582px;
+  }
+
+
+  ul {
+    list-style-type: none; /* Supprimer les puces par défaut */
+    padding-left: 0; /* Supprimer le padding gauche par défaut */
+}
+
+li {
+    position: relative;
+    padding-left: 40px; /* Espacement entre le point et le texte */
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+}
+
+li::before {
+    content: '\2022'; /* Utilisation de Unicode pour le point noir */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 31px; /* Ajustez la taille du point */
+    color: #23a406; /* Couleur du point */
+    font-weight: bold; /* En gras pour le contraste */
+}
+
+.container img.i {
+    width: 310px; /* Ajustez cette valeur selon vos besoins */
+    height: 255px;
+  }
+
+
+
+.trait {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    border-right: 0px solid green; /* Tracer une bordure verticale */
+    padding-right: 40px; /* Espace à droite de la bordure */
+}
+
+.trait::before{
+    content: '';
+    position: absolute;
+    width: 15px; /* Largeur de la ligne verticale */
+    height: 100%;
+    background-color: green; /* Couleur de la ligne */
+    left: 90%; /* Positionner à la droite de la box */
+    top: 80px;
+    transform: translateX(-100%);
+}
+
+
+.bas{
+  margin-top: 100px;
+}
+
+i.container{
+ max-height:"546px" ;
+  max-width:"521px";
+  margin-top: 100px;
+}
+
+
+
+/* Styles pour les écrans de taille moyenne et inférieure (tablettes et smartphones) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container div {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .boxcenter {
+    width: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .pad {
+    padding-top: 0;
+  }
+
+  .container img.box {
+    width: 100%;
+    height: auto;
+  }
+
+  .container img.i {
+    width: 100%;
+    height: auto;
+  }
+
+  .trait {
+    border-right: 0; /* Supprimer la bordure verticale */
+    padding-right: 0; /* Supprimer l'espace à droite de la bordure */
+  }
+
+  .trait::before {
+    display: none; /* Supprimer la ligne verticale */
+  }
+
+  i.container {
+    max-height: none;
+    max-width: none;
+  }
+}
+
+
+/* Pour les écrans jusqu'à 768px de large */
+@media (max-width: 768px) {
+  .box {
+      width: 90%;
+      padding: 5%;
+  }
+  h1, h2 {
+      font-size: 6vw;
+  }
+  .p {
+      font-size: 3vw;
+  }
+  .container {
+      flex-direction: column;
+  }
+  img.image {
+      margin-right: 0;
+      margin-bottom: 5%;
+  }
+}
+
+/* Pour les écrans entre 769px et 1200px de large */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .box {
+      width: 40%;
+  }
+  .container div {
+      flex-basis: 100%;
+  }
+  .centreText {
+      text-align: center;
+  }
+  .pad {
+      padding-top: 10%;
+  }
+  .trait {
+      padding: 2%;
+      margin: 2%;
+  }
+  .trait::before {
+      top: 20%;
+  }
+  .boxcenter {
+      width: 80%;
+      margin-left: 10%;
+  }
+}
+
+/* Pour les écrans plus grands que 1200px */
+@media (min-width: 1201px) {
+  /* Vous pouvez ajouter des règles spécifiques pour les grands écrans ici */
+}
