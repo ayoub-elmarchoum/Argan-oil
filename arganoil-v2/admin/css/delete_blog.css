@@ -1,0 +1,70 @@
+ /* Your custom styles here */
+
+        /* Updated styling for the container and row */
+        .article-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .article h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .article p {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 1.4;
+            color: #666;
+        }
+
+        .article-actions {
+            margin-top: 15px;
+        }
+
+        .article-actions a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .article-actions a.edit {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .article-actions a.edit:hover {
+            background-color: #0056b3;
+        }
+
+        .article-actions a.delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        .article-actions a.delete:hover {
+            background-color: #c82333;
+        }
