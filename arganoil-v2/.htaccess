@@ -1,0 +1,4 @@
+<Files "models/config.php">
+    Order deny,allow
+    Deny from all
+</Files>

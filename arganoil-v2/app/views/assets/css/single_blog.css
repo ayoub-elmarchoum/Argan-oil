@@ -1,0 +1,30 @@
+
+
+.title{
+    width: 100%;
+    flex-shrink: 0;
+    
+    margin-top: 5%;
+    
+    color: rgba(174, 99, 39, 0.81);
+    font-family: Lexend Giga;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .info{
+    
+    width: 100%;
+    margin-top: 4%;
+    color: black;
+    font-family: Lao Sans Pro;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+

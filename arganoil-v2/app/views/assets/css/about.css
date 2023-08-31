@@ -1,0 +1,132 @@
+
+.p{
+  font-size: 27PX;
+}
+.boxcenter {
+    width: 400px;
+    padding-left:300px;
+    border: 0px solid rgb(255, 255, 255);
+    margin: 0;
+  }
+
+  .pad{
+    padding-top: 200px;
+  }
+
+  .container img.box {
+    width: 544px; /* Ajustez cette valeur selon vos besoins */
+    height:582px;
+  }
+
+
+.container img.i {
+    width: 310px; /* Ajustez cette valeur selon vos besoins */
+    height: 255px;
+  }
+
+
+
+.trait {
+    flex: 1;
+    padding: 20px;
+    margin: 0px;
+    position: relative;
+    border-right: 0px solid green; /* Tracer une bordure verticale */
+    padding-right: 40px; /* Espace à droite de la bordure */
+}
+
+.trait::before {
+    content: '';
+    position: absolute;
+    width: 15px; /* Largeur de la ligne verticale */
+    height: 100%;
+    background-color: green; /* Couleur de la ligne */
+    left: 5%; /* Positionner à la droite de la box */
+    top: 20px;
+    transform: translateX(-100%);
+}
+
+
+.bas{
+  margin-top: 100px;
+}
+
+i.container{
+ max-height:"546px" ;
+  max-width:"521px";
+  margin-top: 100px;
+}
+
+
+
+/* Styles pour les écrans de taille moyenne et inférieure (tablettes et smartphones) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container div {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .boxcenter {
+    width: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .pad {
+    padding-top: 0;
+  }
+
+  .container img.box {
+    width: 100%;
+    height: auto;
+  }
+
+  .container img.i {
+    width: 100%;
+    height: auto;
+  }
+
+  .trait {
+    border-right: 0; /* Supprimer la bordure verticale */
+    padding-right: 0; /* Supprimer l'espace à droite de la bordure */
+  }
+
+  .trait::before {
+    display: none; /* Supprimer la ligne verticale */
+  }
+
+  i.container {
+    max-height: none;
+    max-width: none;
+  }
+}
+
+
+
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+.bullet {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+   color: #131912; 
+}
+

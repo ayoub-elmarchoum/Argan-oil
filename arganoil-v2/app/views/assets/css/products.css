@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@300&display=swap');
+
+
+.Frame1{
+    width: 100%; height: 100%; background: white;
+    
+}
+
+
+
+.image{
+    width: 35%;
+    flex-shrink: 0;
+    border-radius: 4%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border: none;
+    
+}
+.descruption{
+    
+    display: flex;
+    flex-direction: column;
+}
+.card-body{
+    flex-grow: 1;
+    
+    
+}
+
+.title{
+    width: 90%;
+    flex-shrink: 0;
+    color: rgba(174, 99, 39, 0.81);
+    font-family: Lexend Giga;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text{
+    
+    width: 90%;
+    margin-top: 4%;
+    color: rgba(0, 0, 0, 0.57);
+    font-family: Lao Sans Pro;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+#buttons-space{
+    justify-content: space-between;
+    
+    text-align: center;
+    flex-grow: 3;
+    background-color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 974px){
+    section{
+        width: 100%;
+    }
+        .card-body{
+            width: 100%;
+            margin-top: 0%;
+        }
+        .txt{
+            width: 100%;
+            margin-top: 0%;
+        }
+        
+        #bulk,#label,#wholesale {
+            flex-direction: column  !important;
+        }
+        .image{
+            width: 100%;
+        } 
+        
+        #buttons-space{
+            margin-top: 1%;
+            
+        }
+
+}
+
+
+
+

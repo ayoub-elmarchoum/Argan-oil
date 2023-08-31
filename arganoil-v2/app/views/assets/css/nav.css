@@ -1,0 +1,162 @@
+
+.a{
+    text-decoration: none;
+    color: rgb(15, 145, 251);
+}
+
+.logo {
+  display: inline-block;
+}
+.img{
+        height: 800px ;
+        width: 100%;
+    }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: none;
+    z-index: 1000;
+    transition: background-color 1s;
+    color: rgb(126, 78, 17);
+    
+}
+
+.navbar.scrolled {
+    background-color: rgb(0, 128, 0);
+    opacity: 1;
+    
+}
+
+.navbar-logo {
+    margin-right: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-menu li a {
+    margin: 0 15px
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-lang {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lang-dropdown {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    top: 100%; 
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(251, 250, 250);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content a:hover {
+  background-color: #008509;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(2, 130, 21);
+}
+li {
+  float: left;
+}
+
+
+#title1 {
+   color: rgb(253, 248, 248); font-size: 30px;
+}
+#title2 { 
+  color: rgb(44, 221, 44); margin-right: 12%; font-size: 30px; 
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev-btn {
+  left: 10px;
+}
+
+#next-btn {
+  right: 10px;
+}
